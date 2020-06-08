@@ -12,7 +12,7 @@
 axios
   .get("https://lambda-times-backend.herokuapp.com/topics")
   .then((res) => {
-    // console.log(rese);
+    // console.log(res);
     let tabs = Array.from(res.data.topics);
     tabs.forEach((item) => {
       let newTab = makeTabsPls(item);
